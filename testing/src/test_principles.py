@@ -23,5 +23,13 @@ def test_bug_addition_enough():
     assert add_with_bug(2, 3) == 6
     print("Test addition with bug passed")
 
+def test_addition_duplicated_logic():
+    #
+    assert add(6, 3) == 9
+    assert add(7, 3) == 10
+
 if __name__ == "__main__":
     test_addition_basic()
+    test_bug_addition_notsufficient()
+    test_bug_addition_enough()
+    test_addition_duplicated_logic()

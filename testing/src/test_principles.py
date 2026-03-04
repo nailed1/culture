@@ -28,8 +28,17 @@ def test_addition_duplicated_logic():
     assert add(6, 3) == 9
     assert add(7, 3) == 10
 
+def test_addition_overcomplicated():
+    for i in range(10, 2**32):
+        for j in range(10, 2**32):
+            assert add(i, j) == i + j #bad since violates duplication
+            assert add(-i, j) == -i+j
+            assert add(i, -j) == i-j
+            assert add(-i, -j) == -i-j
+
 if __name__ == "__main__":
     test_addition_basic()
     test_bug_addition_notsufficient()
     test_bug_addition_enough()
     test_addition_duplicated_logic()
+    test_addition_overcomplicated()

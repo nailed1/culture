@@ -3,7 +3,7 @@ import sys
 sys.path.append('./src')
 
 from math_demo import add
-from math_demo import add_with_bug
+from math_demo import add_with_bug, add_something
 
 #Раннее тестирование позволяет сэкономить время и ресурсы, выявляя ошибки на ранних этапах разработки. Это помогает избежать накопления ошибок и упрощает их исправление, что в конечном итоге приводит к более качественному продукту.
 #Тесты показывают наличие ошибок, а не их отсутствие. Даже если все тесты проходят успешно, это не гарантирует, что в коде нет ошибок. Тесты могут быть неполными или не охватывать все возможные сценарии использования, поэтому важно продолжать тестирование и улучшать его со временем.
@@ -35,6 +35,14 @@ def test_addition_overcomplicated():
             assert add(-i, j) == -i+j
             assert add(i, -j) == i-j
             assert add(-i, -j) == -i-j
+
+def test_add_something_reasonable():
+    assert add_something(1, 2) == 3
+    add_something(1, None) == 0
+    add_something(None, 2) == 0
+    add_something(None, None) == 0
+    add_something("Hello, ", "world!") == "Hello, world!"
+    print("Test addition with reasonable inputs passed")
 
 if __name__ == "__main__":
     test_addition_basic()

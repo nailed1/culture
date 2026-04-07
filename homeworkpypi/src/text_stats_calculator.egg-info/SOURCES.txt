@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/text_stats_calculator/__init__.py
+src/text_stats_calculator/calculator.py
+src/text_stats_calculator.egg-info/PKG-INFO
+src/text_stats_calculator.egg-info/SOURCES.txt
+src/text_stats_calculator.egg-info/dependency_links.txt
+src/text_stats_calculator.egg-info/top_level.txt
+tests/test_calculator.py

@@ -17,6 +17,7 @@ documentation for details.
 
    QUICKSTART
    USAGE
+   api/modules
 
 .. include:: ../SPECIFICATION.md
    :parser: myst_parser.sphinx_

@@ -1,7 +1,7 @@
 [project]
-name = "order-service"
+name = "product-service"
 version = "0.0.1"
-description = "Application for serving users orders"
+description = "service that helps to accept requests to purchase goods by checking their availability in an external service"
 authors = [
     {name = "nailed1",email = "max20070608@gmail.com"}
 ]
